@@ -4,15 +4,10 @@ plugins {
 }
 
 android {
-    compileSdk = 31
-
     defaultConfig {
         applicationId = "com.leesuchan.newspostman"
-        minSdk = 23
-        targetSdk = 31
-        versionCode = 1
-        versionName = "1.0"
-
+        versionCode = Version.versionCode
+        versionName = Version.versionName
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -24,13 +19,6 @@ android {
                 "proguard-rules.pro"
             )
         }
-    }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = "1.8"
     }
 }
 
