@@ -7,3 +7,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "NewsPostman"
 include(":app")
+include(":features:core-ui")
