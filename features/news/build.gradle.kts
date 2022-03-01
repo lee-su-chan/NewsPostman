@@ -18,6 +18,7 @@ dependencies {
     implementation(Dep.Android.appcompat)
     implementation(Dep.Android.material)
     implementation(Dep.Android.activity)
+    implementation(Dep.Android.fragment)
 
     implementation(Dep.Dagger.hiltAndroid)
     kapt(Dep.Dagger.hiltCompiler)
