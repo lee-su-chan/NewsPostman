@@ -45,6 +45,14 @@ object Dep {
         const val hiltGradlePlugin = "com.google.dagger:hilt-android-gradle-plugin:$daggerVersion"
     }
 
+    object Rss{
+        const val rssParser = "com.prof18.rssparser:rssparser:4.0.2"
+    }
+
+    object Timber {
+        const val timber = "com.jakewharton.timber:timber:5.0.1"
+    }
+
     object Test {
         const val junit = "junit:junit:4.13.2"
         const val junitExt = "androidx.test.ext:junit:1.1.3"
