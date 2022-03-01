@@ -28,6 +28,14 @@ object Dep {
             const val livedata = "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion"
             const val runtime = "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion"
         }
+
+        object Navigation {
+            private const val version = "2.3.5"
+            const val safeArgsPlugin =
+                "androidx.navigation:navigation-safe-args-gradle-plugin:$version"
+            const val fragment = "androidx.navigation:navigation-fragment-ktx:$version"
+            const val ui = "androidx.navigation:navigation-ui-ktx:$version"
+        }
     }
 
     object Dagger {

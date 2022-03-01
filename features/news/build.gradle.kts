@@ -19,6 +19,9 @@ dependencies {
     implementation(Dep.Android.material)
     implementation(Dep.Android.activity)
     implementation(Dep.Android.fragment)
+    implementation(Dep.Android.Navigation.fragment)
+    implementation(Dep.Android.Navigation.ui)
+    implementation(Dep.Android.Navigation.safeArgsPlugin)
 
     implementation(Dep.Dagger.hiltAndroid)
     kapt(Dep.Dagger.hiltCompiler)
