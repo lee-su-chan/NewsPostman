@@ -20,10 +20,10 @@ data class ListingNews(
         private val dummy
             get() = ListingNews(
                 id = "1",
-                "지난해 가장 많이 본 뮤지컬과 콘서트는?",
+                "[공연소식] 뮤지컬 '지붕위의 바이올린' 4월 개막",
                 pubDate = Date(),
-                authorName = "한겨레",
-                link = "https://www.hani.co.kr/arti/culture/music/1031156.html"
+                authorName = "매일경제",
+                link = "https://www.mk.co.kr/news/culture/view/2022/02/176495/"
             )
     }
 }

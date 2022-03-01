@@ -9,6 +9,24 @@
         android:id="@+id/new_list_screen"
         android:name="com.leesuchan.news.list.NewsListFragment"
         android:label="뉴스 목록"
-        tools:layout="@layout/fragment_news_list" />
+        tools:layout="@layout/fragment_news_list">
+
+        <action
+            android:id="@+id/action_new_list_screen_to_new_detail_screen"
+            app:destination="@id/new_detail_screen" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/new_detail_screen"
+        android:name="com.leesuchan.news.detail.NewsDetailFragment"
+        android:label="뉴스 상세"
+        tools:layout="@layout/fragment_news_detail">
+
+        <argument
+            android:name="news_link"
+            app:argType="string" />
+
+    </fragment>
 
 </navigation>

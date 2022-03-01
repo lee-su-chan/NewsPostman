@@ -3,6 +3,7 @@ package com.leesuchan.news.list
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.leesuchan.coreui.ui.BaseFragment
 import com.leesuchan.news.R
 import com.leesuchan.news.databinding.FragmentNewsListBinding
@@ -26,6 +27,9 @@ class NewsListFragment : BaseFragment<FragmentNewsListBinding>(R.layout.fragment
     private fun initRecyclerView() {
         binding.rvListingNews.adapter = ListingNewsAdapter {
             Timber.d("onClicked: $it")
+            findNavController().navigate(
+                NewsListFragmentDirections.actionNewListScreenToNewDetailScreen(it.link)
+            )
         }
     }
 }
