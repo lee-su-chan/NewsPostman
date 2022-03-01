@@ -12,9 +12,12 @@
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/v_root"
         android:layout_width="match_parent"
+        android:background="?attr/selectableItemBackground"
         android:layout_height="100dp"
-        android:padding="10dp">
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp">
 
         <TextView
             android:id="@+id/tv_title"
