@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     id("kotlin-android")
     id("kotlin-kapt")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -34,6 +35,9 @@ dependencies {
     implementation(Dep.Android.core)
     implementation(Dep.Android.appcompat)
     implementation(Dep.Android.material)
+
+    implementation(Dep.Dagger.hiltAndroid)
+    kapt(Dep.Dagger.hiltCompiler)
 
     testImplementation(Dep.Test.junit)
 

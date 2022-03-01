@@ -19,6 +19,22 @@ object Dep {
         const val core = "androidx.core:core-ktx:1.7.0"
         const val appcompat = "androidx.appcompat:appcompat:1.4.1"
         const val material = "com.google.android.material:material:1.5.0"
+        const val activity = "androidx.activity:activity-ktx:1.3.1"
+        const val fragment = "androidx.fragment:fragment-ktx:1.3.5"
+
+        object Lifecycle {
+            private const val lifecycleVersion = "2.4.0"
+            const val viewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion"
+            const val livedata = "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion"
+            const val runtime = "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion"
+        }
+    }
+
+    object Dagger {
+        private const val daggerVersion = "2.38.1"
+        const val hiltAndroid = "com.google.dagger:hilt-android:$daggerVersion"
+        const val hiltCompiler = "com.google.dagger:hilt-compiler:$daggerVersion"
+        const val hiltGradlePlugin = "com.google.dagger:hilt-android-gradle-plugin:$daggerVersion"
     }
 
     object Test {
