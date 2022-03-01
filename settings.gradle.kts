@@ -9,3 +9,4 @@ rootProject.name = "NewsPostman"
 include(":app")
 include(":features:core-ui")
 include(":features:news")
+include(":data")
