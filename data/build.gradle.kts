@@ -13,5 +13,7 @@ dependencies {
     implementation(Dep.Dagger.hiltAndroid)
     kapt(Dep.Dagger.hiltCompiler)
 
+    implementation(Dep.WorkManager.work)
+
     implementation(Dep.Rss.rssParser)
 }
