@@ -45,6 +45,11 @@ object Dep {
         const val hiltGradlePlugin = "com.google.dagger:hilt-android-gradle-plugin:$daggerVersion"
     }
 
+    object WorkManager {
+        private const val version = "2.7.1"
+        const val work = "androidx.work:work-runtime-ktx:$version"
+    }
+
     object Rss{
         const val rssParser = "com.prof18.rssparser:rssparser:4.0.2"
     }
