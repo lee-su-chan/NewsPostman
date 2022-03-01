@@ -28,6 +28,8 @@ android {
 }
 
 dependencies {
+    implementation(project(":features:core-ui"))
+
     implementation(Dep.Android.core)
     implementation(Dep.Android.appcompat)
     implementation(Dep.Android.material)
