@@ -29,6 +29,7 @@ android {
 
 dependencies {
     implementation(project(":features:core-ui"))
+    implementation(project(":features:news"))
 
     implementation(Dep.Android.core)
     implementation(Dep.Android.appcompat)
