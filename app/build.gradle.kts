@@ -44,6 +44,7 @@ dependencies {
     kapt(Dep.Dagger.hiltWorkerCompiler)
 
     implementation(Dep.Room.room)
+    implementation(Dep.Room.roomKtx)
     kapt(Dep.Room.roomCompiler)
 
     implementation(Dep.WorkManager.work)
