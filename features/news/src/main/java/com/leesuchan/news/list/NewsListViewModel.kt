@@ -3,6 +3,7 @@ package com.leesuchan.news.list
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.leesuchan.coreui.ui.BaseViewModel
+import com.leesuchan.domain.news.model.ListingNews
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

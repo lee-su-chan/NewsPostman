@@ -3,6 +3,7 @@ package com.leesuchan.news.list
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
+import com.leesuchan.domain.news.model.ListingNews
 
 class ListingNewsAdapter(
     private val onClicked: (ListingNews) -> Unit

@@ -2,6 +2,7 @@ package com.leesuchan.news.list
 
 import android.view.ViewGroup
 import com.leesuchan.coreui.ui.BaseViewHolder
+import com.leesuchan.domain.news.model.ListingNews
 import com.leesuchan.news.R
 import com.leesuchan.news.databinding.ItemListingNewsBinding
 

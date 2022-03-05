@@ -7,7 +7,7 @@
 
         <variable
             name="listingNews"
-            type="com.leesuchan.news.list.ListingNews" />
+            type="com.leesuchan.domain.news.model.ListingNews" />
 
     </data>
 

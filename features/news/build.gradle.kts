@@ -13,6 +13,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":domain"))
     implementation(project(":features:core-ui"))
 
     implementation(Dep.Android.core)

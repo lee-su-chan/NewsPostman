@@ -4,6 +4,7 @@ import android.widget.TextView
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.leesuchan.coreui.util.format
+import com.leesuchan.domain.news.model.ListingNews
 
 object ListingNewsBidingAdapter {
 

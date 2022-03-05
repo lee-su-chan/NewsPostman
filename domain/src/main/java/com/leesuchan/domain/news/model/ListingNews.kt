@@ -1,4 +1,4 @@
-package com.leesuchan.news.list
+package com.leesuchan.domain.news.model
 
 import java.util.*
 
