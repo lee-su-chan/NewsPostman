@@ -1,20 +1,23 @@
 package com.leesuchan.news.list
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.viewModelScope
 import com.leesuchan.coreui.ui.BaseViewModel
+import com.leesuchan.domain.news.GetListingNewsListUseCase
 import com.leesuchan.domain.news.model.ListingNews
+import com.leesuchan.shared.model.getOrDefault
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.flow.SharedFlow
+import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.stateIn
 import javax.inject.Inject
 
 @HiltViewModel
-class NewsListViewModel @Inject constructor() : BaseViewModel() {
+class NewsListViewModel @Inject constructor(
+    getListingNewsListUseCase: GetListingNewsListUseCase
+) : BaseViewModel() {
 
-    private val _listingNews = MutableLiveData<List<ListingNews>>()
-    val listingNews: LiveData<List<ListingNews>> get() = _listingNews
-
-    init {
-        // TODO : 추후 Usecase를 사용하도록 변경
-        _listingNews.value = ListingNews.dummyList
-    }
+    val listingNews: SharedFlow<List<ListingNews>> = getListingNewsListUseCase(Unit)
+        .map { it.getOrDefault(emptyList()) }
+        .stateIn(viewModelScope, SharingStarted.Eagerly, emptyList())
 }
