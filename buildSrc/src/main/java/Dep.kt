@@ -12,7 +12,10 @@ object Dep {
 
     object Kotlin {
         private const val version = "1.5.31"
+        private const val coroutineVersion = "1.5.1"
+
         const val gradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$version"
+        const val coroutine = "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutineVersion"
     }
 
     object Android {
@@ -36,6 +39,10 @@ object Dep {
             const val fragment = "androidx.navigation:navigation-fragment-ktx:$version"
             const val ui = "androidx.navigation:navigation-ui-ktx:$version"
         }
+    }
+
+    object Java {
+        const val inject = "javax.inject:javax.inject:1"
     }
 
     object Dagger {

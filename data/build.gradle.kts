@@ -10,6 +10,8 @@ android {
 }
 
 dependencies {
+    implementation(Dep.Kotlin.coroutine)
+
     implementation(Dep.Dagger.hiltAndroid)
     kapt(Dep.Dagger.hiltCompiler)
     implementation(Dep.Dagger.hiltWorker)

@@ -11,6 +11,10 @@ dependencies {
     implementation(project(":shared"))
     implementation(project(":data"))
 
+    implementation(Dep.Kotlin.coroutine)
+
+    implementation(Dep.Java.inject)
+
     testImplementation(Dep.Test.junit)
 
     androidTestImplementation(Dep.Test.junitExt)
