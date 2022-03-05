@@ -30,7 +30,9 @@ android {
 }
 
 dependencies {
+    implementation(project(":shared"))
     implementation(project(":data"))
+    implementation(project(":domain"))
     implementation(project(":features:core-ui"))
     implementation(project(":features:news"))
 
