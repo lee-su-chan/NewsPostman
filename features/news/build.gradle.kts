@@ -13,6 +13,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":shared"))
     implementation(project(":domain"))
     implementation(project(":features:core-ui"))
 
@@ -23,6 +24,7 @@ dependencies {
     implementation(Dep.Android.fragment)
     implementation(Dep.Android.Navigation.fragment)
     implementation(Dep.Android.Navigation.ui)
+    implementation(Dep.Android.Lifecycle.runtime)
 
     implementation(Dep.Dagger.hiltAndroid)
     kapt(Dep.Dagger.hiltCompiler)
