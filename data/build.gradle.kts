@@ -24,4 +24,9 @@ dependencies {
     implementation(Dep.Rss.rssParser)
 
     implementation(Dep.Timber.timber)
+
+    testImplementation(Dep.Test.junit)
+
+    androidTestImplementation(Dep.Test.junitExt)
+    androidTestImplementation(Dep.Test.espresso)
 }

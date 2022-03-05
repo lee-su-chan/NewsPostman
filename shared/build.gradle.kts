@@ -9,4 +9,8 @@ android {
 
 dependencies {
 
+    testImplementation(Dep.Test.junit)
+
+    androidTestImplementation(Dep.Test.junitExt)
+    androidTestImplementation(Dep.Test.espresso)
 }
