@@ -43,6 +43,9 @@ object Dep {
         const val hiltAndroid = "com.google.dagger:hilt-android:$daggerVersion"
         const val hiltCompiler = "com.google.dagger:hilt-compiler:$daggerVersion"
         const val hiltGradlePlugin = "com.google.dagger:hilt-android-gradle-plugin:$daggerVersion"
+
+        const val hiltWorker = "androidx.hilt:hilt-work:1.0.0"
+        const val hiltWorkerCompiler = "androidx.hilt:hilt-compiler:1.0.0"
     }
 
     object WorkManager {

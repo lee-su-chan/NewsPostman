@@ -40,8 +40,14 @@ dependencies {
 
     implementation(Dep.Dagger.hiltAndroid)
     kapt(Dep.Dagger.hiltCompiler)
+    implementation(Dep.Dagger.hiltWorker)
+    kapt(Dep.Dagger.hiltWorkerCompiler)
+
+    implementation(Dep.WorkManager.work)
 
     implementation(Dep.Timber.timber)
+
+    implementation(Dep.Rss.rssParser)
 
     testImplementation(Dep.Test.junit)
 
