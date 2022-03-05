@@ -9,6 +9,8 @@ android {
 
 dependencies {
 
+    implementation(Dep.Java.inject)
+
     testImplementation(Dep.Test.junit)
 
     androidTestImplementation(Dep.Test.junitExt)
