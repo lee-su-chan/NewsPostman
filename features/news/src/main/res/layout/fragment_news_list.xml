@@ -25,7 +25,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:listingNews="@{viewModel.listingNews}"
             tools:itemCount="20"
             tools:listitem="@layout/item_listing_news" />
 
