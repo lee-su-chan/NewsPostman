@@ -15,6 +15,9 @@ dependencies {
     implementation(Dep.Dagger.hiltWorker)
     kapt(Dep.Dagger.hiltWorkerCompiler)
 
+    implementation(Dep.Room.room)
+    kapt(Dep.Room.roomCompiler)
+
     implementation(Dep.WorkManager.work)
 
     implementation(Dep.Rss.rssParser)
